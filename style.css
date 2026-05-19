@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 900px;
+  border-radius: 8px;
+}
+
+/* Story */
+.story {
+  background: #ffe5d9; /* soft coral */
+}
+
+/* Vision */
+.vision {
+  background: #d9fdd9; /* light green */
+}
+
+/* Mission */
+.mission {
+  background: #e0f0ff; /* sky blue */
+}
+
+/* Benefits */
+.benefits {
+  background: #f3e9ff; /* soft purple */
+}
+
+.benefits ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.benefits li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* Languages */
+.languages {
+  background: #fff8e1; /* light yellow */
+}
+
+/* Footer */
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer h2 {
+  margin-bottom: 1rem;
+}
