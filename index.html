@@ -13,50 +13,27 @@
     <p>Turning screen time into creativity and future-ready skills</p>
   </header>
 
-  <!-- Story Section -->
-  <section class="story">
-    <h2>Our Story</h2>
-    <p>Many children spend hours on smartphones, gaming or watching videos. Parents worry this constant screen focus distracts kids from learning and their future. At Digital Horizons, we turn that worry into hope—children use the same screens to <strong>create instead of consume</strong>, learning coding and digital creativity that strengthens focus, builds confidence, and prepares them for tomorrow.</p>
-  </section>
-
-  <!-- Vision Section -->
-  <section class="vision">
-    <h2>Our Vision</h2>
-    <p>Rooted in Ethiopia, reaching everywhere: empowering kids to transform technology into creativity, innovation, and opportunity.</p>
-  </section>
-
-  <!-- Mission Section -->
-  <section class="mission">
-    <h2>Our Mission</h2>
-    <p>To inspire children to use technology not just for entertainment, but to create, innovate, and build their future.</p>
-  </section>
-
-  <!-- Benefits Section -->
-  <section class="benefits">
-    <h2>Why Parents Love It</h2>
+  <!-- Navigation -->
+  <nav>
     <ul>
-      <li>💻 Kids gain future‑ready digital skills</li>
-      <li>🔒 Safe, structured, and engaging learning environment</li>
-      <li>🌍 Affordable and accessible from home—join from Ethiopia or anywhere</li>
-      <li>🎨 Screen time becomes creativity and valuable skills</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-  </section>
-
-  <!-- Languages Section -->
-  <section class="languages">
-    <h2>Languages</h2>
-    <p>Classes mainly in English, with Tigrigna and Amharic support if needed.</p>
-  </section>
+  </nav>
 
   <!-- Registration Form -->
   <section class="registration">
     <h2>Register Your Child</h2>
-    <form action="https://formspree.io/f/mojbjenw" method="POST">
+    <form id="registrationForm" action="https://formspree.io/f/yourformid" method="POST">
       <label for="parentName">Parent's Name:</label>
       <input type="text" id="parentName" name="parentName" required>
 
       <label for="email">Parent's Email:</label>
       <input type="email" id="email" name="email" required>
+
+      <label for="whatsapp">WhatsApp Number:</label>
+      <input type="tel" id="whatsapp" name="whatsapp" placeholder="+251912345678" required>
 
       <label for="childName">Child's Name:</label>
       <input type="text" id="childName" name="childName" required>
@@ -71,16 +48,27 @@
         <option value="Amharic">Amharic</option>
       </select>
 
+      <!-- Redirect to thank you page -->
+      <input type="hidden" name="_redirect" value="https://digitalhorizons20.github.io/thankyou.html">
+
       <button type="submit">Register</button>
     </form>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Footer -->
   <footer>
     <h2>Contact Us</h2>
     <p>Email: digitalhorizons2026@gmail.com</p>
     <p>Phone: +254-748-100-820</p>
     <p>Join us and let’s build the future together!</p>
   </footer>
+
+  <!-- Script to clear form after submission -->
+  <script>
+    const form = document.getElementById('registrationForm');
+    form.addEventListener('submit', function() {
+      setTimeout(() => form.reset(), 1000); // clears form after submit
+    });
+  </script>
 </body>
 </html>
