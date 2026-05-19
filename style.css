@@ -75,6 +75,53 @@ section {
   background: #fff8e1; /* light yellow */
 }
 
+/* Registration Form */
+.registration {
+  background: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.registration h2 {
+  margin-bottom: 1rem;
+  color: #004080;
+}
+
+.registration form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.registration input,
+.registration select {
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.registration button {
+  margin-top: 1.5rem;
+  padding: 0.7rem;
+  background: #004080;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.registration button:hover {
+  background: #003060;
+}
+
 /* Footer */
 footer {
   background: #004080;
