@@ -7,11 +7,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Hero Section -->
   <header class="hero">
-    <h1>Welcome to Digital Horizons</h1>
-    <p>Turning screen time into creativity and future-ready skills</p>
-    <a href="#registrationForm" class="cta-button">Register Now</a>
+    <div class="hero-content">
+      <h1>Welcome to Digital Horizons</h1>
+      <p>Turning screen time into creativity and future-ready skills</p>
+      <a href="#registrationForm" class="cta-button">Register Now</a>
+    </div>
   </header>
 
   <!-- Navigation -->
@@ -19,32 +21,26 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
+      <li><a href="programs.html">Programs</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Story Section -->
-  <section class="story">
-    <h2>Our Story</h2>
-    <p>Many children spend hours on smartphones, gaming or watching videos. Parents worry this constant screen focus distracts kids from learning and their future. At Digital Horizons, we turn that worry into hope—children use the same screens to <strong>create instead of consume</strong>, learning coding and digital creativity that strengthens focus, builds confidence, and prepares them for tomorrow.</p>
-  </section>
-
-  <!-- Vision Section -->
-  <section class="vision">
-    <h2>Our Vision</h2>
-    <p>Rooted in Ethiopia, reaching everywhere: empowering kids to transform technology into creativity, innovation, and opportunity.</p>
-  </section>
-
-  <!-- Mission Section -->
-  <section class="mission">
-    <h2>Our Mission</h2>
-    <p>To inspire children to use technology not just for entertainment, but to create, innovate, and build their future.</p>
+  <!-- Highlights -->
+  <section class="highlights">
+    <h2>Why Choose Us?</h2>
+    <div class="cards">
+      <div class="card">💻 Future‑ready digital skills</div>
+      <div class="card">🔒 Safe & structured learning</div>
+      <div class="card">🌍 Accessible anywhere</div>
+      <div class="card">🎨 Creativity through coding</div>
+    </div>
   </section>
 
   <!-- Registration Form -->
   <section class="registration">
     <h2>Register Your Child</h2>
-    <form id="registrationForm" action="https://formspree.io/f/mojbjenw" method="POST">
+    <form id="registrationForm" action="https://formspree.io/f/yourformid" method="POST">
       <label for="parentName">Parent's Name:</label>
       <input type="text" id="parentName" name="parentName" required>
 
@@ -67,7 +63,6 @@
         <option value="Amharic">Amharic</option>
       </select>
 
-      <!-- Redirect to thank you page -->
       <input type="hidden" name="_redirect" value="https://digitalhorizons20.github.io/thankyou.html">
 
       <button type="submit">Register</button>
@@ -76,17 +71,14 @@
 
   <!-- Footer -->
   <footer>
-    <h2>Contact Us</h2>
-    <p>Email: digitalhorizons2026@gmail.com</p>
-    <p>Phone: +254-748-100-820</p>
-    <p>Join us and let’s build the future together!</p>
+    <p>© 2026 Digital Horizons | digitalhorizons2026@gmail.com |  +254-748-100-820</p>
   </footer>
 
-  <!-- Script to clear form after submission -->
+  <!-- Clear form after submission -->
   <script>
     const form = document.getElementById('registrationForm');
     form.addEventListener('submit', function() {
-      setTimeout(() => form.reset(), 1000); // clears form after submit
+      setTimeout(() => form.reset(), 1000);
     });
   </script>
 </body>
