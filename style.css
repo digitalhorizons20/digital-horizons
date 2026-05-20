@@ -25,3 +25,33 @@ nav a {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+/* Programs Section */
+.programs {
+  max-width: 1000px;
+  margin: 3rem auto;
+  text-align: center;
+}
+.programs h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #004080;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card h3 {
+  margin: 1rem 0;
+  color: #003060;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
