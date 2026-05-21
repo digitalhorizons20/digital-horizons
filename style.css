@@ -96,4 +96,32 @@ footer {
 .practice button:hover {
   background: #003060;
 }
+/* Navigation Bar */
+nav {
+  background: #003060;   /* dark blue background */
+  padding: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;         /* makes links horizontal */
+  justify-content: center; /* centers them */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 1.5rem;      /* spacing between links */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;        /* gold hover effect */
+}
 
