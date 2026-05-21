@@ -72,3 +72,28 @@ footer {
   padding: 2rem;
   margin-top: 3rem;
 }
+.practice {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+.practice textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: monospace;
+}
+.practice button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #004080;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.practice button:hover {
+  background: #003060;
+}
+
