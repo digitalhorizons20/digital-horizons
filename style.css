@@ -55,3 +55,20 @@ nav a {
   font-size: 0.95rem;
   color: #555;
 }
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background: #003060;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
