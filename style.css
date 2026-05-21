@@ -124,4 +124,9 @@ nav {
 .nav-links a:hover {
   color: #ffcc00;        /* gold hover effect */
 }
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
