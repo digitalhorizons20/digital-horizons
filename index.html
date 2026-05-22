@@ -18,14 +18,27 @@
 
   <!-- Navigation -->
  <nav>
-    <ul>
+  <div class="nav-container">
+    <div class="logo">Digital Horizons</div>
+    <button class="menu-toggle">☰</button>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="programs.html">Programs</a></li>
       <li><a href="practice.html">Practice</a></li>
+      <li class="dropdown">
+        <a href="courses.html">Courses ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="html-course.html">HTML Basics</a></li>
+          <li><a href="css-course.html">CSS Basics</a></li>
+          <li><a href="js-course.html">JavaScript Basics</a></li>
+        </ul>
+      </li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Highlights -->
   <section class="highlights">
@@ -82,5 +95,14 @@
       setTimeout(() => form.reset(), 1000);
     });
   </script>
+  <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
 </body>
 </html>
