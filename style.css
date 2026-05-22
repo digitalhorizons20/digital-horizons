@@ -140,16 +140,7 @@ nav {
   background: linear-gradient(to right, #004080, #0066cc);
   padding: 0.5rem 1rem;
 }
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
+
 
 /* Links horizontal on desktop */
 .nav-links {
@@ -217,4 +208,136 @@ nav {
   .nav-links.show {
     display: flex;
   }
+}
+.logo img {
+  height: 50px;
+  width: auto;
+  mix-blend-mode: multiply; /* blends white with background */
+}
+/* Logo positioning */
+.logo {
+  position: absolute;   /* take it out of normal flow */
+  top: 15px;            /* distance from top */
+  left: 20px;           /* distance from left (use right:20px if you want top-right corner) */
+}
+
+.logo img {
+  height: 50px;         /* adjust size */
+  width: auto;
+  display: block;
+}
+/* Make nav fixed at top */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #004080, #0066cc);
+  padding: 0.5rem 1rem;
+  z-index: 1000; /* keeps it above other content */
+}
+
+/* Push page content down so it doesn't hide under nav */
+.hero {
+  margin-top: 80px; /* adjust based on nav height */
+}
+
+.logo {
+  margin-right: 2rem; /* space between logo and links */
+}
+.logo {
+  flex-shrink: 0;   /* prevents logo from shrinking */
+  margin-right: 2rem;
+}
+/* Container: logo left, links right */
+
+
+/* Prevent overlap */
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+/* Navigation container: logo left, links right */
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  flex: 0 0 auto;   /* logo never shrinks */
+}
+
+.nav-links {
+  flex: 1;          /* take remaining space */
+  display: flex;
+  justify-content: flex-end; /* push links to the right */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Form Section */
+.form-section {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.form-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column; /* vertical layout */
+}
+
+.form-box label {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #003060;
+}
+
+.form-box input,
+.form-box select {
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-box button {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background: #004080;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: #003060;
 }
