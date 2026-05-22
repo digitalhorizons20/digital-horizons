@@ -1,66 +1,73 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Open Sans', Arial, sans-serif; background: #f9f9f9; color: #333; }
+
+/* Navigation */
+nav {
+  background: #003060;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+}
+nav li { margin: 0 1.5rem; }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover { color: #ffcc00; }
+
+/* Hero Banner */
 .hero {
-  background: linear-gradient(to right, #004080, #0066cc);
+  background: linear-gradient(to right, #004080, #0066cc), url('hero-bg.jpg') center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 6rem 2rem;
 }
-nav {
-  background: #003060;
-  padding: 1rem;
-}
-nav a {
-  color: white;
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.3rem; margin-bottom: 2rem; }
+.cta-button {
+  background: #ffcc00;
+  color: #004080;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
   text-decoration: none;
-  margin: 0 1rem;
+  font-weight: bold;
 }
-.cards {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin: 2rem;
-}
-.card {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-/* Programs Section */
-.programs {
+.cta-button:hover { background: #ffdb4d; }
+
+/* Section Cards */
+.highlights {
   max-width: 1000px;
   margin: 3rem auto;
   text-align: center;
-}
-.programs h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #004080;
 }
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
+  margin-top: 2rem;
 }
 .card {
   background: white;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.card h3 {
-  margin: 1rem 0;
-  color: #003060;
-}
-.card p {
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 1.1rem;
 }
 
-.card {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.card1 {
+  background: #ffcc00;
+  padding: 6rem;
+  border-radius: 16px;
+  box-shadow: 4 2px 8px rgba(0,0,0,0.1);
   font-size: 1.1rem;
 }
 
@@ -72,61 +79,3 @@ footer {
   padding: 2rem;
   margin-top: 3rem;
 }
-.practice {
-  max-width: 800px;
-  margin: 2rem auto;
-  text-align: center;
-}
-.practice textarea {
-  width: 100%;
-  padding: 1rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-family: monospace;
-}
-.practice button {
-  margin-top: 1rem;
-  padding: 0.7rem 1.5rem;
-  background: #004080;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.practice button:hover {
-  background: #003060;
-}
-/* Navigation Bar */
-nav {
-  background: #003060;   /* dark blue background */
-  padding: 1rem;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;         /* makes links horizontal */
-  justify-content: center; /* centers them */
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  margin: 0 1.5rem;      /* spacing between links */
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #ffcc00;        /* gold hover effect */
-}
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
