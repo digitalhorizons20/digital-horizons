@@ -268,3 +268,24 @@ pre {
     padding: 3rem 1rem;
   }
 }
+/* Homepage mobile fix */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .course-bar {
+    position: relative;
+    margin-top: 0.5rem;
+  }
+  .course-bar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero {
+    margin-top: 80px;
+    padding: 3rem 1rem;
+  }
+}
