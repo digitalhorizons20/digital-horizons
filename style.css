@@ -341,3 +341,79 @@ nav {
 .form-box button:hover {
   background: #003060;
 }
+.lesson-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* single column by default */
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.lesson-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lesson-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Accent colors */
+.lesson-card.welcome {
+  border-top: 6px solid #004080; /* deep blue */
+}
+
+.lesson-card.web {
+  border-top: 6px solid #28a745; /* green */
+}
+
+.lesson-card.activity {
+  border-top: 6px solid #ff9800; /* orange */
+}
+
+.lesson-card.homework {
+  border-top: 6px solid #e91e63; /* pink/red */
+}
+
+.lesson-card h3 {
+  margin-bottom: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .lesson-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+@media (min-width: 1200px) {
+  .lesson-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  }
+}
+pre {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: monospace;
+  margin-top: 1rem;
+}
+
+pre {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: monospace;
+  margin-top: 1rem;
+}
+.lesson-card.welcome { background: #f0f8ff; }   /* light blue */
+.lesson-card.web { background: #f9fff0; }       /* light green */
+.lesson-card.activity { background: #fff8e1; }  /* light orange */
+.lesson-card.homework { background: #fff0f5; }  /* light pink */

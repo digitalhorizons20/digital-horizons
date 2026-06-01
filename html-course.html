@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Basics - Digital Horizons</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top nav (same as main site) -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.jpg" alt="Digital Horizons Logo">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li class="dropdown">
+          <a href="courses.html">Courses ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="html-course.html" class="active">HTML Basics</a></li>
+            <li><a href="css-course.html">CSS Basics</a></li>
+            <li><a href="js-course.html">JavaScript Basics</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sidebar + Lesson Content -->
+  <div class="lesson-container">
+    <aside class="sidebar">
+      <h2>HTML Lessons</h2>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#elements">HTML Elements</a></li>
+        <li><a href="#attributes">Attributes</a></li>
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#paragraphs">Paragraphs</a></li>
+      </ul>
+    </aside>
+
+    <main class="lesson-content">
+  <section id="lesson1">
+    <h2>Lesson 1: Welcome & Introduction to HTML</h2>
+<section class="lesson-card welcome">
+    <h3>1. Welcome</h3>
+    <p>Hello everyone! Welcome to our first coding class. For the next 12 weeks, we will learn how to build real websites from zero. By the end of this course, each of you will have your own online portfolio. So today, relax, follow me step by step, and enjoy the process.</p>
+</section>
+<section class="lesson-card web">
+    <h3>2. What is the Web?</h3>
+    <p>Before we start coding, let’s understand something important: <strong>What is the internet?</strong><br>
+    The internet is a global network of computers that communicate with each other. A website is simply a file stored on another computer called a <strong>server</strong>. When you visit a website, your browser (Chrome, Firefox, Edge) requests the file and shows it to you.</p>
+
+    <p>Websites are built using three main languages:</p>
+    <ul>
+      <li><strong>HTML</strong> – gives structure (the skeleton)</li>
+      <li><strong>CSS</strong> – gives style (colors, layout, beauty)</li>
+      <li><strong>JavaScript</strong> – adds functionality (movement, logic, interactivity)</li>
+    </ul>
+</section>
+<section class="lesson-card activity">
+    <h3>3. Activity</h3>
+    <p>Can you mention any website you visited today? Google? TikTok? YouTube?<br>
+    All of these websites use HTML, CSS, and JavaScript.</p>
+
+    <h2>SECTION 1: INTRODUCTION TO HTML</h2>
+    <p>Now let’s start with our first language: <strong>HTML</strong>.<br>
+    HTML stands for <em>HyperText Markup Language</em>. It is the language that builds the structure of every webpage.</p>
+
+    <p>Think of HTML like building a house. The walls, the floor, the windows — that is HTML. It doesn’t look beautiful yet, but it forms the structure.</p>
+
+    <h3>💻 Open the Coding Environment</h3>
+    <p>Today we learn how to create our <strong>first web page</strong> using HTML.<br>
+    We will use an online editor that works in any browser — no signup required.</p>
+    <p>Go to: <a href="practice.html" >TryIt Editor</a></p>
+
+    <h3>📘 What to Teach Step-by-Step</h3>
+    <h4>Step 1 — Open the TryIt Editor</h4>
+    <p>Guide students to open the URL. Explain: Left side → code, Right side → preview (output).</p>
+
+    <h4>Step 2 — Replace Starter Text</h4>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello World!&lt;/h1&gt;
+  &lt;p&gt;This is my first website using HTML.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h4>Step 3 — Explain the HTML Structure</h4>
+    <ul>
+      <li><code>&lt;!DOCTYPE html&gt;</code> → tells the browser this is HTML</li>
+      <li><code>&lt;html&gt;</code> → main container</li>
+      <li><code>&lt;head&gt;</code> → metadata</li>
+      <li><code>&lt;title&gt;</code> → browser tab name</li>
+      <li><code>&lt;body&gt;</code> → visible content</li>
+    </ul>
+
+    <h4>Step 4 — Add an Image</h4>
+    <pre><code>&lt;img src="https://via.placeholder.com/200" alt="Sample Image"&gt;</code></pre>
+
+    <h4>Step 5 — Add a Link</h4>
+    <pre><code>&lt;a href="https://google.com" target="_blank"&gt;Visit Google&lt;/a&gt;</code></pre>
+
+    <h3>✨ Week 1 Activity (In Class)</h3>
+    <ul>
+      <li>Replace “Hello World!” with your name</li>
+      <li>Add 2 paragraphs about yourselves</li>
+      <li>Add an image (from unsplash.com or placeholder)</li>
+    </ul>
+</section>
+<section class="lesson-card homework">
+    <h3>📝 Homework</h3>
+    <ul>
+      <li>Add two links (favorite websites)</li>
+      <li>Add a heading and 2 images</li>
+      <li>Send me the code (copy/paste) before next class</li>
+    </ul>
+
+    <h3>📌 How to Share Code</h3>
+    <p>Students can save their HTML in a text editor, then copy/paste into the teacher group. At the end of this week, you will submit a simple 1-page website introducing yourself.</p>
+  
+  </section>
+  </section>
+</main>
+
+  </div>
+</body>
+</html>
