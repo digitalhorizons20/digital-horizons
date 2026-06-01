@@ -236,7 +236,7 @@ pre {
   width: auto;
   mix-blend-mode: multiply; /* blends white with background */
 }
-/* Mobile adjustments */
+/* Mobile homepage fixes */
 @media (max-width: 768px) {
   /* Navigation */
   .menu-toggle { display: block; }
@@ -245,12 +245,17 @@ pre {
     flex-direction: column;
     background: #003060;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
   .nav-links.show { display: flex; }
   .nav-links li { margin: 0.5rem 0; }
 
   /* Course bar */
+  .course-bar {
+    position: relative; /* no longer fixed */
+    top: 0;
+    margin-top: 0.5rem;
+  }
   .course-bar ul {
     flex-direction: column;
     align-items: flex-start;
@@ -259,24 +264,17 @@ pre {
     margin: 0.5rem 0;
   }
 
-  /* Sidebar */
-  .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    top: 0;
+  /* Hero section */
+  .hero {
+    margin-top: 80px; /* less spacing on mobile */
+    padding: 3rem 1rem;
   }
-  .lesson-content {
-    margin-left: 0;
-  }
-
-  /* Hero banner */
   .hero h1 { font-size: 2rem; }
   .hero p { font-size: 1rem; }
-  .cta-button { padding: 0.6rem 1rem; }
 
-  /* Cards */
+  /* Cards section */
   .cards {
     grid-template-columns: 1fr; /* stack cards vertically */
+    padding: 1rem;
   }
 }
