@@ -7,37 +7,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <body>
-  <!-- Navigation Bar -->
-  <nav>
-  <div class="nav-container">
-    <!-- Logo on the left -->
-    <div class="logo">
-      <a href="index.html">
-        <img src="logo.jpg" alt="Digital Horizons Logo">
-      </a>
-    </div>
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.jpg" alt="Digital Horizons Logo">
+        </a>
+      </div>
 
-    <!-- Links on the right -->
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="programs.html">Programs</a></li>
-      <li><a href="practice.html">Practice</a></li>
-      <li class="dropdown">
-        <a href="courses.html">Courses ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="html-course.html">HTML Basics</a></li>
-          <li><a href="css-course.html">CSS Basics</a></li>
-          <li><a href="js-course.html">JavaScript Basics</a></li>
-        </ul>
-      </li>
-      <li><a href="contact.html">Contact</a></li>
+      <!-- Links -->
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Course Bar -->
+  <div class="course-bar">
+    <ul>
+      <li><a href="html-course.html">HTML</a></li>
+      <li><a href="css-course.html">CSS</a></li>
+      <li><a href="js-course.html">JavaScript</a></li>
+      <li><a href="python-course.html">Python</a></li>
+      <li><a href="java-course.html">Java</a></li>
+      <li><a href="php-course.html">PHP</a></li>
+      <li><a href="sql-course.html">SQL</a></li>
+      <li><a href="react-course.html">React</a></li>
+      <li><a href="bootstrap-course.html">Bootstrap</a></li>
     </ul>
   </div>
-</nav>
-
-
 
   <!-- Hero Banner -->
   <header class="hero">
@@ -45,8 +51,6 @@
     <p>Turning screen time into creativity and future-ready skills</p>
     <a href="register.html" class="cta-button">Register Now</a>
   </header>
-
-
 
   <!-- Highlights -->
   <section class="highlights">
@@ -59,28 +63,18 @@
     </div>
   </section>
 
-  <!-- Registration Form -->
-  
   <!-- Footer -->
   <footer>
-    <p>© 2026 Digital Horizons | digitalhorizons2026@gmail.com |  +254-748-100-820</p>
+    <p>© 2026 Digital Horizons | digitalhorizons2026@gmail.com | +254-748-100-820</p>
   </footer>
 
-  <!-- Clear form after submission -->
+  <!-- Mobile Nav Script -->
   <script>
-    const form = document.getElementById('registrationForm');
-    form.addEventListener('submit', function() {
-      setTimeout(() => form.reset(), 1000);
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
     });
   </script>
-  <script>
-  const toggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
-</script>
-
 </body>
 </html>

@@ -6,38 +6,67 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero small">
-    <h1>Thank You!</h1>
-  </header>
-  <nav>
-  <div class="nav-container">
-    <div class="logo">
-      <a href="index.html">
-        <img src="logo.jpg" alt="Digital Horizons Logo">
-      </a>
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.jpg" alt="Digital Horizons Logo">
+        </a>
+      </div>
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
     </div>
-    <button class="menu-toggle">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="programs.html">Programs</a></li>
-      <li><a href="practice.html">Practice</a></li>
-      <li class="dropdown">
-        <a href="courses.html">Courses ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="html-course.html">HTML Basics</a></li>
-          <li><a href="css-course.html">CSS Basics</a></li>
-          <li><a href="js-course.html">JavaScript Basics</a></li>
-        </ul>
-      </li>
-      <li><a href="contact.html">Contact</a></li>
+  </nav>
+
+  <!-- Course Bar -->
+  <div class="course-bar">
+    <ul>
+      <li><a href="html-course.html">HTML</a></li>
+      <li><a href="css-course.html">CSS</a></li>
+      <li><a href="js-course.html">JavaScript</a></li>
+      <li><a href="python-course.html">Python</a></li>
+      <li><a href="java-course.html">Java</a></li>
+      <li><a href="php-course.html">PHP</a></li>
+      <li><a href="sql-course.html">SQL</a></li>
+      <li><a href="react-course.html">React</a></li>
+      <li><a href="bootstrap-course.html">Bootstrap</a></li>
     </ul>
   </div>
-</nav>
 
+  <!-- Hero Banner -->
+  <header class="hero small">
+    <h1>Thank You!</h1>
+    <p>Your registration has been received.</p>
+  </header>
+
+  <!-- Thank You Section -->
   <section class="thankyou">
-    <h2>Your registration has been received.</h2>
-    <p>We’ll contact you soon via email or WhatsApp with more details. Welcome to Digital Horizons!</p>
+    <h2>Welcome to Digital Horizons</h2>
+    <p>We’ll contact you soon via email or WhatsApp with more details. We’re excited to have you join our learning journey!</p>
+    <a href="index.html" class="cta-button">Back to Home</a>
   </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Digital Horizons | digitalhorizons2026@gmail.com | +254-748-100-820</p>
+  </footer>
+
+  <!-- Mobile Nav Script -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>

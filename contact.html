@@ -6,39 +6,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.jpg" alt="Digital Horizons Logo">
+        </a>
+      </div>
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Course Bar -->
+  <div class="course-bar">
+    <ul>
+      <li><a href="html-course.html">HTML</a></li>
+      <li><a href="css-course.html">CSS</a></li>
+      <li><a href="js-course.html">JavaScript</a></li>
+      <li><a href="python-course.html">Python</a></li>
+      <li><a href="java-course.html">Java</a></li>
+      <li><a href="php-course.html">PHP</a></li>
+      <li><a href="sql-course.html">SQL</a></li>
+      <li><a href="react-course.html">React</a></li>
+      <li><a href="bootstrap-course.html">Bootstrap</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Banner -->
   <header class="hero small">
     <h1>Contact Us</h1>
   </header>
- <nav>
-  <div class="nav-container">
-   <div class="logo">
-  <img src="logo.jpg" alt="Digital Horizons Logo">
-    </div>
-    <button class="menu-toggle">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="programs.html">Programs</a></li>
-      <li><a href="practice.html">Practice</a></li>
-      <li class="dropdown">
-        <a href="courses.html">Courses ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="html-course.html">HTML Basics</a></li>
-          <li><a href="css-course.html">CSS Basics</a></li>
-          <li><a href="js-course.html">JavaScript Basics</a></li>
-        </ul>
-      </li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
 
-
+  <!-- Contact Section -->
   <section class="contact">
     <h2>Get in Touch</h2>
-    <p>Email:digitalhorizons2026@gmail.com</p>
+    <p>Email: digitalhorizons2026@gmail.com</p>
     <p>Phone/WhatsApp: +254-748-100-820</p>
-<form action="https://formspree.io/f/yourformid" method="POST">
+
+    <form action="https://formspree.io/f/yourformid" method="POST">
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" required>
 
@@ -48,17 +62,22 @@
       <label for="message">Message:</label>
       <textarea id="message" name="message" rows="5" required></textarea>
 
-      <button type="submit">Send Message</button>
+      <button type="submit" class="cta-button">Send Message</button>
     </form>
   </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Digital Horizons | digitalhorizons2026@gmail.com | +254-748-100-820</p>
+  </footer>
+
+  <!-- Mobile Nav Script -->
   <script>
-  const toggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
-</script>
-
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>

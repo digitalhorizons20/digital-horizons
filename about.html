@@ -6,64 +6,80 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.jpg" alt="Digital Horizons Logo">
+        </a>
+      </div>
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Course Bar -->
+  <div class="course-bar">
+    <ul>
+      <li><a href="html-course.html">HTML</a></li>
+      <li><a href="css-course.html">CSS</a></li>
+      <li><a href="js-course.html">JavaScript</a></li>
+      <li><a href="python-course.html">Python</a></li>
+      <li><a href="java-course.html">Java</a></li>
+      <li><a href="php-course.html">PHP</a></li>
+      <li><a href="sql-course.html">SQL</a></li>
+      <li><a href="react-course.html">React</a></li>
+      <li><a href="bootstrap-course.html">Bootstrap</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Banner -->
   <header class="hero small">
     <h1>About Us</h1>
   </header>
-  <nav>
-  <div class="nav-container">
-    <div class="logo">
-      <a href="index.html">
-        <img src="logo.jpg" alt="Digital Horizons Logo">
-      </a>
-    </div>
-    <button class="menu-toggle">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="programs.html">Programs</a></li>
-      <li><a href="practice.html">Practice</a></li>
-      <li class="dropdown">
-        <a href="courses.html">Courses ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="html-course.html">HTML Basics</a></li>
-          <li><a href="css-course.html">CSS Basics</a></li>
-          <li><a href="js-course.html">JavaScript Basics</a></li>
-        </ul>
-      </li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
 
-
+  <!-- About Section -->
   <section class="about">
     <h2>Who We Are</h2>
-	<div class="cards">
+    <div class="cards">
       <div class="card1">
-    <p>
-      We are a team of computer science and technology graduates with a passion for innovation and education. 
-      Some of us are parents ourselves, and we’ve experienced the worry of seeing our children spend hours glued to screens. 
-      We know firsthand how constant screen time can affect focus and creativity.
-    </p>
-    <p>
-      But we’ve also seen the other side: when children are given the right options, their screen time can be transformed into learning, creativity, and skill‑building. 
-      That realization inspired us to take action.
-    </p>
-    <p>
-      Digital Horizons was born from our desire to help families everywhere. 
-      Our initiative empowers children to use technology not just for entertainment, but as a tool to create, innovate, and prepare for the future.
-    </p>
-	 </div>
+        <p>
+          We are a team of computer science and technology graduates with a passion for innovation and education. 
+          Some of us are parents ourselves, and we’ve experienced the worry of seeing our children spend hours glued to screens. 
+          We know firsthand how constant screen time can affect focus and creativity.
+        </p>
+        <p>
+          But we’ve also seen the other side: when children are given the right options, their screen time can be transformed into learning, creativity, and skill‑building. 
+          That realization inspired us to take action.
+        </p>
+        <p>
+          Digital Horizons was born from our desire to help families everywhere. 
+          Our initiative empowers children to use technology not just for entertainment, but as a tool to create, innovate, and prepare for the future.
+        </p>
+      </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Digital Horizons | digitalhorizons2026@gmail.com | +254-748-100-820</p>
+  </footer>
+
+  <!-- Mobile Nav Script -->
   <script>
-  const toggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
-</script>
-
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
