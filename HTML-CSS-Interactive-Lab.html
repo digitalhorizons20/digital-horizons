@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>HTML & CSS Lab</title>
+<style>
+body{font-family:Arial;background:#eef;margin:20px}#app{max-width:900px;margin:auto;background:#fff;padding:20px;border-radius:8px}
+textarea{width:100%;height:180px;background:#1e1e1e;color:#fff;font-family:monospace}
+button{padding:8px 14px;margin:5px}.preview{width:100%;height:220px;border:1px solid #999}
+#answer{display:none;background:#ffffcc;padding:10px}
+</style></head><body><div id="app">
+<h1>HTML & CSS Interactive Lab</h1><p id=q></p>
+<textarea id=code></textarea><br>
+<button onclick=run()>Run</button><button onclick=check()>Check</button>
+<button onclick=showAns()>Show Answer</button><button onclick=hint()>Hint</button>
+<button onclick=retry()>Try Again</button><button onclick=nextQ()>Next</button>
+<p id=msg></p><div id=answer></div>
+<h3>Live Preview</h3><iframe id=frame class=preview></iframe>
+</div><script>
+const qs=[
+{q:"1. Create an h1 saying Welcome",a:"<h1>Welcome</h1>",k:["<h1>"],h:"Use an h1 tag"},
+{q:"2. Add a paragraph",a:"<p>Hello World</p>",k:["<p>"],h:"Use p"},
+{q:"3. Create a link to https://example.com",a:'<a href="https://example.com">Visit</a>',k:["<a","href"],h:"Use a tag"},
+{q:"4. Insert an image",a:'<img src="image.jpg" alt="Image">',k:["<img"],h:"Use img"},
+{q:"5. Make an unordered list",a:"<ul><li>One</li></ul>",k:["<ul>","<li>"],h:"Use ul/li"},
+{q:"6. Change background to lightblue",a:"<style>body{background:lightblue;}</style>",k:["background"],h:"CSS background"},
+{q:"7. Make h1 red",a:"<style>h1{color:red;}</style><h1>Title</h1>",k:["color"],h:"Use color"},
+{q:"8. Add margin 20px",a:"<style>div{margin:20px;}</style>",k:["margin"],h:"Use margin"},
+{q:"9. Center with flexbox",a:"<style>body{display:flex;justify-content:center;align-items:center;}</style>",k:["display:flex","justify-content"],h:"Use flex"},
+{q:"10. Mini project: Profile card",a:"<div><h2>John</h2><p>Student</p></div>",k:["<div","<h2","<p"],h:"Use div,h2,p"}
+];let i=0;load();
+function load(){q.textContent=qs[i].q;code.value="";msg.textContent="";answer.style.display="none";}
+function run(){let d=frame.contentWindow.document;d.open();d.write(code.value);d.close();}
+function check(){msg.textContent=qs[i].k.every(x=>code.value.includes(x))?"✅ Correct":"❌ Try Again";}
+function showAns(){answer.style.display="block";answer.textContent=qs[i].a;}
+function hint(){alert(qs[i].h);}
+function retry(){code.value="";msg.textContent="";answer.style.display="none";frame.src="about:blank";}
+function nextQ(){if(i<9){i++;load()}else alert("Congratulations!");}
+</script></body></html>
